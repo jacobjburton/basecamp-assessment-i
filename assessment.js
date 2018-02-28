@@ -40,11 +40,11 @@ console.log(canDrive);
 
 var colorResponse;
 
-function responseCreator (param)
+var responseCreator = function (param)
 {
   if (param === "green")
   {
-    colorResponse = "Green is okay";                          
+    colorResponse = "Green is okay";
   } else if (param === "red")
     {
       colorResponse = "I heart red";
@@ -52,8 +52,22 @@ function responseCreator (param)
       {
         colorResponse = "What is your favorite color?";
       }
-        return colorResponse;
+  return colorResponse;
 }
+//function responseCreator (param)
+//{
+// if (param === "green")
+//  {
+//    colorResponse = "Green is okay";                          
+//  } else if (param === "red")
+//    {
+//      colorResponse = "I heart red";
+//    } else
+//      {
+//        colorResponse = "What is your favorite color?";
+//      }
+//        return colorResponse;
+//}
 
 console.log(responseCreator("green"));
 console.log(responseCreator("red"));
